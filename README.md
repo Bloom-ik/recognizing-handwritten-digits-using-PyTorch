@@ -8,6 +8,7 @@ AFTER THAT : we have tried early stopping and also dropout methods in order to i
 the early stopping will tell us about the number of epochs needed ,means when we should stop training.
 
 in second file: i have tried to do the hyperparameters tuning , such as the number of filters(kernels), their size, padding,stride, also the learning rate..
+so the first step is to find the best hyperparamters, and for this we need to use a validation set. after we have found them we are going to retrain our model with this specific hyperparamters values;and then we will evaluate its performance on a test set.
 these hyperparameters plays a crucial role in improving model's accuracy; even its complexity. so finding the best hyperparameters will gives us the best model.
 i tried to use the randomsearchCV but unfortunately i couldn't succeed to do it , it prints error about the shape , i guess i have to do some calculas to find the shape .. and i have noticed also that it takes a lot of time to do it. 
 
